@@ -44,11 +44,16 @@ header {
     margin-right: 10px;
     font-size: 18px;
 }
+.contenedor_logo img {
+    height: 214px;
+    margin-right: 9px;
+}
 .contenedor_logo a:hover{
     color: white;
     text-decoration: underline white;
     transition: 0.3s ease-out all; 
-}  
+} 
+/* -> @MEDIA */
 @media only screen and (max-width:600px){
     .contenedor_header{
     display: flex;
@@ -134,13 +139,12 @@ header {
 /*------------------------------HEADER END------------------------------*/
 
 /*------------------------------NAV START------------------------------*/
-
 .contenedor_nav {
     display: flex;
     justify-content: flex-start;
     align-content: center;
-    padding: 15px;
-    font-size: 25px;
+    padding: 17px;
+    font-size: 20px;
     background-color: var(--bg--white);
     position: sticky;
 }
@@ -153,9 +157,10 @@ ul {
 }
 li {
     float: left;
+    padding: 5px;
 }
 li a {
-    display: block;
+    /* display: block; */
     color: black;
     text-align: center;
     padding: 14px 16px;
@@ -174,6 +179,7 @@ li a:hover {
     background-color: var(--main--black);
     color: white;
 }
+/* -> @MEDIA */
 @media only screen and (max-width:600px){
     .contenedor_nav {
     display: flex;
@@ -182,12 +188,11 @@ li a:hover {
     }
     li {
     float: initial;
+    border-bottom: 1.3px solid var(--main--black);
+    border-right: 1.3px solid var(--bg--color);
     }
-    li {
-        border-bottom: 1.3px solid var(--main--black);
-    }
-    li {
-        border-right: 1.3px solid var(--bg--color);
+    li a{
+    display: block;
     }
 }
 /*------------------------------NAV END------------------------------*/
