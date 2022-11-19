@@ -12,16 +12,19 @@
         --bg--white: #E0E0E0;
         --hover--gray: rgb(63, 63, 63);
 }
-/*------------------------------HEADER START------------------------------*/
+.separador {
+    height: 25px;
+}
+/*------------------------------HEADER------------------------------*/
 header {
     background-color: var(--main--black);
 }
-.contenedor_header{
+.container-header{
     max-width: 1400px;
     margin: auto;
     height: 90px;
 }
-.contenedor_header a {
+.container-header a {
     color: white;
     text-decoration: none;
 }
@@ -34,7 +37,7 @@ header {
     color: white;
     font-family: 'Times New Roman', Times, serif;
 }
-.contenedor_logo {
+.container-logo {
     height: 33%;
     display: flex;
     flex-direction: row;
@@ -44,29 +47,29 @@ header {
     margin-right: 10px;
     font-size: 18px;
 }
-.contenedor_logo img {
+.container-logo img {
     height: 214px;
     margin-right: 9px;
 }
-.contenedor_logo a:hover{
+.container-logo a:hover{
     color: white;
     text-decoration: underline white;
     transition: 0.3s ease-out all; 
 } 
 /* -> @MEDIA */
 @media only screen and (max-width:600px){
-    .contenedor_header{
+    .container-header{
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     }
 
-.contenedor_logo img {
+.container-logo img {
     opacity: 0.5;    
 }
 }
-/*------------------------------LOGIN START------------------------------*/
+/*------------------------------LOGIN------------------------------*/
 .login-box {
     position: absolute;
     top: 50%;
@@ -138,8 +141,8 @@ header {
 /*------------------------------LOGIN END------------------------------*/
 /*------------------------------HEADER END------------------------------*/
 
-/*------------------------------NAV START------------------------------*/
-.contenedor_nav {
+/*------------------------------NAV------------------------------*/
+.container-nav {
     display: flex;
     justify-content: flex-start;
     align-content: center;
@@ -181,7 +184,7 @@ li a:hover {
 }
 /* -> @MEDIA */
 @media only screen and (max-width:600px){
-    .contenedor_nav {
+    .container-nav {
     display: flex;
     justify-content: center;
     font-size: 25px;
@@ -196,6 +199,53 @@ li a:hover {
     }
 }
 /*------------------------------NAV END------------------------------*/
+/*------------------------------BANNER SECTION------------------------------*/
+.container-banner-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-banner-home, img{
+    height: 70vh;
+    padding: 10px;
+}
+@media only screen and (max-width:600px){
+    .container-banner-home, img{
+        height: 28vh;
+    }
+    
+}
+/*------------------------------BANNER SECTION END------------------------------*/
+/*------------------------------FOOTER------------------------------*/
+.container-footer{
+    background-color: var(--main--black);
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+}
+.container-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.container-icons img {
+    height: 10vh;
+}
+@media only screen and (max-width:600px){
+    .container-footer{
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .container-icons{
+        font-size: 20px;
+    }
+}
+/*------------------------------FOOTER END------------------------------*/
 
 
 
