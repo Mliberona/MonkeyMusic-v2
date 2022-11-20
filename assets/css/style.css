@@ -68,6 +68,7 @@ header {
 .container-logo img {
     opacity: 0.5;    
 }
+/* -> @MEDIA */
 }
 /*------------------------------HEADER END------------------------------*/
 /*------------------------------NAV------------------------------*/
@@ -92,7 +93,6 @@ li {
     padding: 5px;
 }
 li a {
-    /* display: block; */
     color: black;
     text-align: center;
     padding: 14px 16px;
@@ -350,7 +350,7 @@ li a:hover {
     font-size: 1rem;
   }
   .c-form-required {
-    color: #b0092d;
+    color: rgb(198, 155, 0);
   }
   textarea.c-form-input {
     width: 100%;
@@ -374,13 +374,17 @@ li a:hover {
     padding: 15px;
     border: none;
     border-radius: 4px;
-    background-color: #3d3935;
+    background-color: var(--main--black);
     color: #fff;
     font-size: 1.125rem;
     letter-spacing: 2px;
     text-align: center;
     outline: none;
     cursor: pointer;
+  }
+  .c-form-btn:hover{
+    background: rgba(237, 202, 0, 0.863);
+
   }
   @media screen and (min-width: 481px) {
     .two-columns {
