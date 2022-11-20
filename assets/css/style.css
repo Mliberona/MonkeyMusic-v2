@@ -69,78 +69,7 @@ header {
     opacity: 0.5;    
 }
 }
-/*------------------------------LOGIN------------------------------*/
-.login-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    padding: 50px;
-    transform: translate(-50%, -50%);
-    background: var(--main--black);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px #010918;
-    border-radius: 10px;
-}
-.login-box h1 {
-    margin: 0 0 30px;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-}
-.login-box .user-box {
-    position: relative;
-}
-.login-box .user-box input {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 20   px;
-    color: #fff;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
-}
-.login-box .user-box label {
-    position: absolute;
-    top:0;
-    left: 0;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    pointer-events: none;
-    transition: .5s;
-}
-.login-box .user-box input:focus ~ label,
-.login-box .user-box input:valid ~ label {
-    top: -20px;
-    left: 0;
-    color: #5a94f8;
-    font-size: 12px;
-}
-.login-box form a {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #ffffff;
-    font-size: 16px;
-    text-decoration: none;
-    overflow: hidden;
-    transition: .5s;
-    margin-top: 40px;
-    margin-left: 85px;
-    border: 2px solid white;
-    margin-left: 95px;
-}
-.login-box a:hover {
-    background: #a9a0a4;
-    color: black;
-    border-radius: 5px;
-}
-/*------------------------------LOGIN END------------------------------*/
 /*------------------------------HEADER END------------------------------*/
-
 /*------------------------------NAV------------------------------*/
 .container-nav {
     display: flex;
@@ -200,10 +129,14 @@ li a:hover {
 }
 /*------------------------------NAV END------------------------------*/
 /*------------------------------BANNER SECTION------------------------------*/
-.container-banner-home{
+.container-banners{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 50px;
+}
+.container-banner-home:hover{
+    cursor: pointer;
 }
 .container-banner-home, img{
     height: 70vh;
@@ -216,6 +149,127 @@ li a:hover {
     
 }
 /*------------------------------BANNER SECTION END------------------------------*/
+/*------------------------------ARTIST SECTION------------------------------*/
+.container-title-artist{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+.container-title-artist h1{
+    font-size: 40px;
+}
+.team-section
+{
+	background: var(--bg--white);
+	text-align: center;
+}
+.inner-width
+{
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px;
+	color: black;
+	overflow: hidden;
+}
+.team-section h1
+{
+	font-size: 20px;
+	text-transform: uppercase;
+	display: inline-block;
+	border-bottom: 4px solid;
+	padding-bottom: 10px;
+}
+.pe
+{
+	float: left;
+	width: calc(100% / 3);
+	overflow: hidden;
+	padding: 40px 0;
+	transition: 0.4s;
+}
+.pe:hover
+{
+	background: rgba(128, 128, 128, 0.171);
+    cursor: pointer;
+	border-radius: 6%;
+}
+.pe img
+{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+}
+.p-name
+{
+	margin: 5px;
+	text-transform: uppercase;
+}
+.p-des
+{
+	font-style: italic;
+	color: #3498db;
+}
+@media screen and (max-width: 960px) {
+	.pe{
+		width: 45%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.pe{
+		width: 50%;
+	}
+}
+@media screen and (max-width: 600px) {
+	.pe{
+		width: 100%;
+	}
+}
+/*------------------------------ARTIST SECTION END------------------------------*/
+/*------------------------------ALBUM SECTION------------------------------*/
+.flex-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}  
+#img-album{
+    height: 300px;
+}
+.price {
+    color: grey;
+    padding: 5px;
+    font-size: 17px;
+}
+#btn-1{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+#btn-1:hover{
+    color: black;
+    background: rgba(237, 202, 0, 0.863);
+}
+@media only screen and (max-width:600px){
+    .flex-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*------------------------------ALBUM SECTION END------------------------------*/
 /*------------------------------FOOTER------------------------------*/
 .container-footer{
     background-color: var(--main--black);
