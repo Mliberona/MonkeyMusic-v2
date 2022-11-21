@@ -307,6 +307,101 @@ li a:hover {
 
 
 /*------------------------------PRDUCT SECTION END------------------------------*/
+/*------------------------------ABOUT SECTION ------------------------------*/
+.container-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+.container-title h1{
+    font-size: 40px;
+
+}
+.container-subtitle{
+    margin-left: 130px;
+}
+
+.container-subtitle h1{
+    font-size: 30px;
+}
+.container-paragraph{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    text-align: justify;
+    max-width: 100%;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+.container-imgs {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+.card-imgs{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    width: 98%;
+    margin: 10px;
+    height: 500px;
+    width: 350px;
+}
+#card-1{
+    background-image: url(../../assets/imgs/banners/about-store.jpg);
+}
+#card-2{
+    background-image: url(../..//assets/imgs/banners/about-meme.jpg);
+}
+#card-3{
+    background-image: url(../..//assets/imgs/banners/about-vinyl.jpg);
+}
+.card-imgs h1{
+    color: white;
+    font-size: 50px;
+    text-shadow: 3px 3px 15px black;
+}
+.card-imgs p{
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.668);
+    height: 27px;
+    width: 300px;
+    margin: 0 auto;
+}
+@media only screen and (max-width:600px){
+    .container-paragraph{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .container-paragraph p{
+        font-size: 20px;
+    }
+    .container-subtitle{
+        margin-left: 110px;
+    }
+    .container-imgs {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .card-imgs{
+        width: 450px;
+    }    
+}
+
+/*------------------------------ABOUT SECTION END ------------------------------*/
 .container-form {
     display: flex;
     justify-content: center;
