@@ -325,6 +325,7 @@ li a:hover {
 
 .container-subtitle h1{
     font-size: 30px;
+    margin-left: 0px;
 }
 .container-paragraph{
     display: flex;
